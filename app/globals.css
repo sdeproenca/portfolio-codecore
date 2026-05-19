@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ink: #0a0a0a;
+  --ink-raised: #111111;
+  --ink-panel: #0d0d0d;
+  --bone: #e8e8e3;
+  --bone-dim: #9a9a92;
+  --bone-faint: #5a5a55;
+  --accent: #ff3d8b;
+  --accent-deep: #d92670;
+  --rule: #2a2a26;
+}
+
+html, body {
+  background-color: var(--ink);
+  color: var(--bone);
+  font-family: var(--font-mono), ui-monospace, "SFMono-Regular", Menlo, monospace;
+  font-feature-settings: "ss01", "cv02";
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--ink);
+  background-image:
+    repeating-linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.035) 0px,
+      rgba(255, 255, 255, 0.035) 1px,
+      transparent 1px,
+      transparent 4px
+    ),
+    radial-gradient(rgba(232, 232, 227, 0.045) 1px, transparent 1px);
+  background-size: 100% 4px, 22px 22px;
+  background-position: 0 0, 0 0;
+  background-attachment: fixed, fixed;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--ink);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.accent { color: var(--accent); }
+.dim    { color: var(--bone-dim); }
+.faint  { color: var(--bone-faint); }
+
+/* Visually consistent horizontal rule used inside panels */
+.hairline { border-color: var(--rule); }
+
+/* Marquee */
+.marquee-track {
+  display: inline-flex;
+  white-space: nowrap;
+  will-change: transform;
+}
+
+/* Pulsing status dot */
+.status-dot {
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  background: var(--accent);
+  border-radius: 9999px;
+  box-shadow: 0 0 0 0 rgba(255, 61, 139, 0.6);
+  animation: pulse-ring 1.8s ease-out infinite;
+}
+
+@keyframes pulse-ring {
+  0%   { box-shadow: 0 0 0 0 rgba(255, 61, 139, 0.55); }
+  70%  { box-shadow: 0 0 0 8px rgba(255, 61, 139, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(255, 61, 139, 0); }
+}
+
+/* Markdown panels: minimal vertical rhythm */
+.prose-mono p { color: var(--bone); line-height: 1.65; margin-bottom: 1rem; }
+.prose-mono p + p { margin-top: 0; }
+.prose-mono h2 { font-size: 0.78rem; color: var(--bone-dim); letter-spacing: 0.08em; text-transform: uppercase; margin: 1.5rem 0 0.75rem; }
+.prose-mono h3 { font-size: 0.95rem; color: var(--bone); margin: 1.25rem 0 0.5rem; }
+.prose-mono h4 { font-size: 0.8rem; color: var(--accent); letter-spacing: 0.04em; margin: 1.25rem 0 0.5rem; }
+.prose-mono ul { list-style: none; padding: 0; margin: 0 0 1rem; }
+.prose-mono ul li { position: relative; padding-left: 1.1rem; color: var(--bone); margin: 0.25rem 0; }
+.prose-mono ul li::before { content: "›"; position: absolute; left: 0; color: var(--accent); }
+.prose-mono a { color: var(--accent); border-bottom: 1px dashed currentColor; }
+.prose-mono a:hover { background: rgba(255, 61, 139, 0.12); }
+.prose-mono strong { color: var(--bone); font-weight: 600; }
+.prose-mono em { color: var(--bone-dim); font-style: normal; }
+.prose-mono blockquote {
+  border-left: 2px solid var(--accent);
+  padding: 0.25rem 0 0.25rem 1rem;
+  margin: 1rem 0;
+  color: var(--bone);
+}
+.prose-mono blockquote p { margin-bottom: 0.5rem; }
+.prose-mono hr { border: 0; border-top: 1px solid var(--rule); margin: 2rem 0; }
