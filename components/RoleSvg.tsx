@@ -4,6 +4,47 @@ const FONT = "'JetBrains Mono', monospace";
 const ACCENT = "#ff2d7a";
 const MUTED = "#6e6e6e";
 
+// ── ANDROMEDA — scale of impact strip ─────────────────────────────────────────
+const AND_STATS = [
+  { num: "12",     label: "CHAINS / 1 MONTH" },
+  { num: "20+",    label: "RELEASES SHIPPED"  },
+  { num: "2,600+", label: "HACKATHON DEVS"    },
+  { num: "400+",   label: "dAPPS ON aOS"      },
+];
+
+function AndromedaSvg() {
+  const W = 700, GW = W / 4;
+  return (
+    <svg viewBox={`0 0 ${W} 128`} xmlns="http://www.w3.org/2000/svg"
+      role="img" aria-labelledby="and-t and-d">
+      <title id="and-t">Scale of impact: Andromeda Protocol</title>
+      <desc id="and-d">Four large numbers: 12 chain integrations in one month, 20+ releases shipped, 2,600+ hackathon developers, 400+ dApps built on aOS.</desc>
+      <text x={350} y={14} fontFamily={FONT} fontSize={6} fill={MUTED}
+        textAnchor="middle" letterSpacing="0.8">
+        ONE PROTOCOL. TWENTY MONTHS. MONTHLY RELEASES THE WHOLE WAY THROUGH.
+      </text>
+      {[1, 2, 3].map(i => (
+        <line key={i} x1={i * GW} y1={22} x2={i * GW} y2={104}
+          stroke={ACCENT} strokeWidth={0.5} strokeOpacity={0.18}/>
+      ))}
+      {AND_STATS.map((s, i) => {
+        const cx = (i + 0.5) * GW;
+        return (
+          <g key={i}>
+            <text x={cx} y={72} fontFamily={FONT} fontSize={24} fill={ACCENT}
+              textAnchor="middle" fontWeight={700}>{s.num}</text>
+            <text x={cx} y={90} fontFamily={FONT} fontSize={6.5} fill={MUTED}
+              textAnchor="middle" letterSpacing="0.5">{s.label}</text>
+          </g>
+        );
+      })}
+      <text x={350} y={114} fontFamily={FONT} fontSize={7} fill={MUTED} textAnchor="middle">
+        aOS // Cosmos ecosystem // April 2024 to March 2026
+      </text>
+    </svg>
+  );
+}
+
 // ── BUENOS AIRES — scale of impact strip ───────────────────────────────────────
 const BA_STATS = [
   { num: "10,000+", label: "CAMERAS DEPLOYED"       },
@@ -47,6 +88,7 @@ function BuenosAiresSvg() {
 
 // ── Router ─────────────────────────────────────────────────────────────────────
 const SVG_MAP: Record<string, React.ReactNode> = {
+  "andromeda":                    <AndromedaSvg />,
   "buenos-aires-city-government": <BuenosAiresSvg />,
 };
 

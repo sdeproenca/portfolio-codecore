@@ -23,38 +23,29 @@ export const ROLES: Record<string, Role> = {
     title: "Product & Delivery Manager",
     period: "April 2024 to March 2026  //  Remote (ET/CET)",
     context: "Cosmos-based L1 + on-chain operating system",
-    stamp: "I owned the product. aOS, a chain-agnostic operating system for building Web3 apps from modular smart contract components instead of custom Rust. Founding product team. Twenty months. Monthly releases the whole way through.",
+    stamp: "aOS: a chain-agnostic operating system for building Web3 apps from modular smart contract components instead of custom Rust. Founding team. Twenty months. Monthly releases the whole way through.",
     sections: [
       {
-        heading: "TECHNICALLY AMBITIOUS. OPERATIONALLY FRAGMENTED.",
-        body: "aOS is a real piece of engineering. Specs shifted weekly. Engineers across five timezones. Marketing, ecosystem, and dev all needed visibility into a roadmap being rebuilt mid-flight. And the community expected a release cadence we had not yet earned.",
+        heading: "HIGH AMBIGUITY. HIGH PACE. NO PLAYBOOK.",
+        body: "aOS was technically ambitious and structurally loose. Engineers across five timezones, specs shifting mid-sprint, a community expecting a release cadence the team had not yet locked in. The job was to add structure without adding overhead, and to keep work moving in an environment where nothing waited.",
       },
       {
-        heading: "I BUILT THE OPERATING SYSTEM AROUND THE OPERATING SYSTEM.",
-        body: "Release management in Linear with milestone-linked acceptance criteria and role-based ownership. Async weekly checkpoints. Exception-based reporting so blockers surfaced before they blocked. By the end I could tell you what was shipping, what was at risk, and what was being deferred, in one screen.",
+        heading: "TWELVE CHAINS. ONE MONTH.",
+        body: "Drove twelve mainnet and testnet integrations across the Cosmos ecosystem: technical fit analysis, engineering sequencing, partner coordination, launch timing. Each integration shipped on schedule without cannibalizing the others.",
       },
       {
-        heading: "TWELVE CHAINS. ONE MONTH. ALL SHIPPED ON SCHEDULE.",
-        body: "I led the upstream research analyzing the Cosmos ecosystem on technical fit, sequenced engineering, coordinated launch timing per chain so announcements did not cannibalize each other, and managed partner touchpoints directly.",
-      },
-      {
-        heading: "AI IN THE OPERATING LAYER, BEFORE IT WAS COOL TO SAY THAT.",
-        body: "I led a docs-trained dev assistant (Google AI Studio plus Claude API, exposed via a Telegram bot) that cut clarification threads in the dev community by roughly 40%. I wrote the PRD for an MCP server connecting LLMs directly to aOS contracts. The team ran on Cursor, Warp, CodeRabbit, Vercel v0, Copilot, and Perplexity. Every meaningful loop in our internal ops touched AI by the end of 2024.",
-      },
-      {
-        heading: "THE ECOSYSTEM STUFF THAT HITS IN WAVES.",
-        body: "2,600+ devs across two global hackathons. University workshops at fourteen schools including Harvard, MIT, Cornell, UC Berkeley, and Oxford. Release schedule kept ticking.",
+        heading: "AI ACROSS THE WHOLE LOOP.",
+        body: "AI was woven into how the team operated, from a developer-facing assistant trained on our docs to internal tooling built around LLM integrations. The whole team ran on AI-native tools across writing, code, deployment, and research. Built this way before it was the default.",
       },
     ],
     outcomes: [
-      "12 mainnet and testnet integrations in one month",
-      "Monthly release cadence across roughly 20 releases",
+      "12 chain integrations in one month, all shipped on schedule",
+      "20+ releases across a twenty-month monthly cadence",
+      "2,600+ developers reached across two global hackathons",
       "1,500+ ADOs and 400+ dApps built on aOS by EOY 2024",
-      "32 submissions and 3 winners at one hackathon. 378 apps and 1,084 ADOs at the other",
-      "100+ new builders onboarded through Rise In and Web3 University",
     ],
     stack: "Linear, Notion, Slack, Discord, Telegram, Figma, GitHub. Google AI Studio, Claude API, Cursor, Vercel. Cosmos SDK, CosmWasm, IBC context.",
-    skills: "Product ownership end-to-end. Technical program management. Multi-chain release orchestration. AI tooling for internal workflows. Developer relations. Hackathon operations. Distributed team management. PRD writing.",
+    skills: "Technical program management. Multi-chain release orchestration. AI tooling integration. Developer relations. Hackathon operations. Distributed team coordination.",
     links: [
       { label: "Documentation", href: "https://docs.andromedaprotocol.io/andromeda" },
       { label: "Developer guides", href: "https://docs.andromedaprotocol.io/guides" },
@@ -70,29 +61,23 @@ export const ROLES: Record<string, Role> = {
     title: "Project & Operations Manager",
     period: "March 2023 to June 2024  //  Remote (ET)",
     context: "Shopify Plus agency, D2C and enterprise eCommerce",
-    stamp: "Sole PM. 20+ simultaneous client projects. I joined and the operations layer was not there yet, so I built it.",
+    stamp: "Project and Operations Manager at a Shopify Plus agency. Joined with no operations layer in place. Left with one that scaled.",
     sections: [
       {
-        heading: "EVERYTHING THAT SHOULD HAVE BEEN A SYSTEM WAS SOMEONE'S MANUAL JOB.",
-        body: "Status updates were tax. Onboarding was a checklist someone might remember. The agency was scaling client volume faster than coordination could keep up. The choice was: hire more coordinators, or remove the need for them.",
+        heading: "THE OPS LAYER DIDN'T EXIST YET.",
+        body: "Built the project and delivery infrastructure from scratch: automated workflows, standardized tooling, and systems that kept work moving without adding coordination overhead. The kind of setup that handles volume without handling it manually.",
       },
       {
-        heading: "I WENT WITH REMOVING THE NEED.",
-        body: "Zapier as the orchestration core, wiring Slack into HubSpot into ClickUp into email as a single pipeline. A signed contract triggered onboarding, reviewer assignment, kickoff scheduling, and tracking. Zero human touch. Status updates flowed without anyone writing them. Role-based ClickUp views so every collaborator saw their own clean board. Meeting-recording AI fed auto-summaries into project notes. Change-log baked into every project so scope creep got logged and sized before it touched the team. This was 2023. Pre-agents-being-a-thing. Most of the leverage came from configuring existing tools to work like a system.",
-      },
-      {
-        heading: "THE BRANDS SHIPPING UNDER THE NEW OPS LAYER.",
-        body: "Builds, migrations, and CRO programs for Drake Waterfowl, igourmet (+30% sales), Better Rhodes (+31% conversion), Excel Blades (+57% revenue), Proraso (+153% sales), Napa Valley Wine Academy, Anne Cole, James Bark, and more. Contributed to Caseo.ai, a Shopify SEO assistant now running across 300+ Shopify stores.",
+        heading: "THE WORK THAT SHIPPED THROUGH IT.",
+        body: "Custom builds, migrations, highly customized sites and applications, email marketing campaigns, and CRO programs across a growing client roster. igourmet (+30% sales), Better Rhodes (+31% conversion), Excel Blades (+57% revenue), Proraso (+153% sales). Also contributed to Caseo.ai, a Shopify SEO tool now running across 300+ stores.",
       },
     ],
     outcomes: [
-      "Scaled to 20+ simultaneous clients without adding coordinators",
-      "Cut delivery time roughly 20% through ClickUp standardization",
-      "Manual status communication dropped roughly 40% in pilot flows",
+      "igourmet +30% sales, Better Rhodes +31% conversion, Excel Blades +57% revenue, Proraso +153% sales",
       "Contributed to Caseo.ai, now powering 300+ Shopify stores",
     ],
-    stack: "Zapier, ClickUp, Slack, HubSpot, Shopify Plus, Klaviyo, Otter.ai, Loom, Figma.",
-    skills: "Operations design from scratch. Workflow automation. Multi-client portfolio management. CRO and A/B testing literacy. Customer Lifetime Value awareness. Scope management. Client communication. eCommerce delivery.",
+    stack: "Zapier, ClickUp, Slack, HubSpot, Shopify Plus, Klaviyo, Figma.",
+    skills: "Operations design from scratch. Workflow automation. eCommerce delivery. CRO literacy. Scope management. Client communication.",
     links: [
       { label: "Case studies", href: "https://www.parkfieldcommerce.com/case-studies" },
       { label: "Caseo.ai on Shopify App Store", href: "https://apps.shopify.com/caseo-ai-seo-assistant" },
@@ -117,7 +102,7 @@ export const ROLES: Record<string, Role> = {
       },
       {
         heading: "COSMOVERSE 2022: A LIVE CROSS-CHAIN SWAP ON STAGE.",
-        body: "Medellín, September 2022. I coordinated MVP scope, the demo build, and external messaging. The live demo was a token swap orchestrated end-to-end through XCVM, walked through on stage by the tech lead and senior frontend dev on day one of the conference. The product later evolved into the Generalized CosmWasm VM and now lives on the Picasso Network.",
+        body: "Medellín, September 2022. I coordinated MVP scope, the demo build, and external messaging. The live demo was a token swap orchestrated end-to-end through XCVM, walked through on stage by the tech lead and senior frontend dev on day one of the conference.",
       },
     ],
     outcomes: [
@@ -130,7 +115,7 @@ export const ROLES: Record<string, Role> = {
     links: [
       { label: "XCVM introduction (with diagrams)", href: "https://composablefi.medium.com/introducing-the-composable-xcvm-building-interoperable-applications-on-composable-parachain-with-45e2dcbbd78d" },
       { label: "Cosmoverse build-up (Dev Log 13)", href: "https://medium.com/composable-finance/dev-log-13-b4e10099af84" },
-      { label: "Live product: Picasso XCVM docs", href: "https://docs.picasso.network/products/cross-chain-virtual-machine" },
+      { label: "Composable's deck - Cosmoverse 2022", href: "https://youtu.be/DR3J9Lnji6E" },
       { label: "Coverage (CoinSpeaker)", href: "https://www.coinspeaker.com/composable-cross-chain-ecosystem/" },
     ],
   },
@@ -164,9 +149,8 @@ export const ROLES: Record<string, Role> = {
     stack: "Figma, ClickUp, Notion, Slack, GitHub.",
     skills: "Resource and capacity management. Design ops. Stakeholder communication. Portfolio prioritization. Conference speaking.",
     links: [
-      { label: "Polkadot Decoded 2022 talk", href: "https://youtu.be/tUSwXQBb94s" },
-      { label: "Polkadot Decoded 2022 program", href: "https://decoded.polkadot.network/2022edition/" },
-      { label: "Panoptic portfolio page", href: "https://www.advancedblockchain.com/portfolio/panoptic" },
+      { label: "Watch my deck at Polkadot Decoded 2022 (ES)", href: "https://youtu.be/tUSwXQBb94s" },
+      { label: "Advanced Blockchain portfolio", href: "https://www.advancedblockchain.com/portfolio" },
     ],
   },
   "coderio": {
@@ -227,7 +211,7 @@ export const ROLES: Record<string, Role> = {
     stack: "Microsoft Project, government internal systems, biometric matching software, CCTV management platforms.",
     skills: "High-stakes program management. Multi-agency stakeholder coordination. Regulated and judicial environment delivery. Biometric data governance literacy. Public-sector technology rollout. Crisis-tolerant operations.",
     links: [
-      { label: "Official launch announcement", href: "https://buenosaires.gob.ar/jefedegobierno/noticias/horacio-rodriguez-larreta-presento-el-nuevo-sistema-de-reconocimiento-facial" },
+      { label: "City video surveillance program (GCBA)", href: "https://buenosaires.gob.ar/gcaba_historico/justiciayseguridad/noticias/la-ciudad-avanza-hacia-un-75-de-espacio-publico-con-videovigilancia" },
       { label: "Pre-launch coverage (La Nacion)", href: "https://www.lanacion.com.ar/seguridad/usaran-primera-vez-sistema-reconocimiento-facial-atrapar-nid2241360/" },
       { label: "Day-one arrest coverage (La Nacion)", href: "https://www.lanacion.com.ar/seguridad/ya-detuvieron-siete-profugos-sistema-reconocimiento-facial-nid2241562/" },
       { label: "Oversight body visit (Defensoria)", href: "https://defensoria.org.ar/entradas-cpdp/sistema-de-reconocimiento-facial-visita-al-centro-de-monitoreo-urbano/" },

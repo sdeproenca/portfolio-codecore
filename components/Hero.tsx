@@ -24,15 +24,15 @@ export function Hero() {
             Product and operations manager.{" "}
             <span className="text-accent">Eight+ years</span> across Web3 infrastructure,
             ecommerce, enterprise data, and public-sector technology, but with much in common:{" "}
-            <span className="text-accent">high impact, high stakes, high pace</span>.
+            <span className="text-accent">high impact, high stakes, high pace, high agency</span>.
+            Exactly how I operate.
           </p>
 
           <p className="max-w-prose text-[14px] leading-relaxed text-bone-dim">
             I work at the{" "}
             <span className="text-bone">intersection of product, delivery, and operations</span>.
-            Roadmaps, release playbooks, cross-functional coordination,{" "}
-            <span className="text-bone">AI in the loop</span>, and the thousand small decisions
-            that keep complex things shipping.
+            Roadmaps, release playbooks, cross-functional coordination, and{" "}
+            <span className="text-bone">AI in the loop</span> in high ambiguity scenarios.
           </p>
 
           <div className="flex flex-wrap gap-3 pt-2">

@@ -183,7 +183,7 @@ export function About() {
               <JsonLine k="regions" v={'["ARG", "ITA"]'} />
               <JsonLine k="domains" v={'["WEB3", "ECOM", "GOVTECH"]'} />
               <JsonLine k="projects_led" v={'"30+"'} />
-              <JsonLine k="hackathon_devs" v={"2600"} />
+              <JsonLine k="AI_workflows" v={"true"} />
               <JsonLine k="languages" v={'["es", "en", "it"]'} />
 
               <div className="my-1" />
