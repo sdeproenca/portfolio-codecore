@@ -8,7 +8,7 @@ const NAV_ITEMS = [
   { idx: "02", node: "runtime.log",   ptr: "CAREER TIMELINE", href: "#timeline" },
   { idx: "03", node: "about.md",      ptr: "BACKGROUND",      href: "#about" },
   { idx: "04", node: "contact.exe",   ptr: "OPEN CHANNEL",    href: "#contact" },
-  { idx: "05", node: "curriculum.pdf",ptr: "DOWNLOAD CV",     href: "/Sofi_de_Proenca_CV.pdf" },
+  { idx: "05", node: "curriculum.pdf",ptr: "DOWNLOAD CV",     href: "/Sofi_de_Proenca_CV.pdf", newTab: true },
 ];
 
 export function MenuNav() {
@@ -32,6 +32,8 @@ export function MenuNav() {
               <li key={item.idx}>
                 <a
                   href={item.href}
+                  target={item.newTab ? "_blank" : undefined}
+                  rel={item.newTab ? "noopener noreferrer" : undefined}
                   onMouseEnter={() => setHovered(item.idx)}
                   onMouseLeave={() => setHovered(null)}
                   className={`

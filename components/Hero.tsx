@@ -38,6 +38,8 @@ export function Hero() {
           <div className="flex flex-wrap gap-3 pt-2">
             <a
               href="/Sofi_de_Proenca_CV.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="border border-accent bg-accent/10 px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.16em] text-accent transition hover:bg-accent hover:text-ink"
             >
               FETCH_CURRICULUM_VITAE ↓
